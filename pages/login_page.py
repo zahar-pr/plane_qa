@@ -8,11 +8,11 @@ class LoginPage(BasePage):
     SUBMIT = "button[type='submit']"
 
     def open_login(self):
-        self.log.step("Opening login page")
+        self.log.step("Open login page")
         self.open("https://app.plane.so/login")
 
-    def login(self, email: str, password: str):
-        self.log.step("Perform login")
+    def login(self, email, password):
+        self.log.step("Login attempt")
 
         self.fill(self.EMAIL, email)
         self.fill(self.PASSWORD, password)

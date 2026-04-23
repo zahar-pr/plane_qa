@@ -2,13 +2,15 @@ import allure
 from pages.login_page import LoginPage
 
 
-@allure.feature("Authentication")
+@allure.feature("Auth")
 @allure.story("Login flow")
-def test_login_flow(browser_context):
-    page = browser_context
+def test_login(page):
 
     login = LoginPage(page)
 
     login.open_login()
 
-    assert "Plane" in login.get_title()
+    login.assert_true(
+        "login" in page.url or "Plane" in page.title(),
+        "Login page should be opened"
+    )

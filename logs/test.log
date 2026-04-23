@@ -1,0 +1,6 @@
+[2026-04-23 23:27:04] [STEP] Open login page
+[2026-04-23 23:27:04] [STEP] Open URL: https://app.plane.so/login
+[2026-04-23 23:27:13] [ERROR] FAIL: Login page should be opened
+[2026-04-23 23:28:11] [STEP] Open login page
+[2026-04-23 23:28:11] [STEP] Open URL: https://app.plane.so/login
+[2026-04-23 23:28:20] [ERROR] FAIL: Login page should be opened
